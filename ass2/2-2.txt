@@ -1,0 +1,6 @@
+       a  b
+→ * s0 s1 s0
+    s1 s0 s1
+
+#Everytime we encounter "a" we switch state
+#from allowed to not allowed.

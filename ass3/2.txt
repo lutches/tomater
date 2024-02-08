@@ -1,0 +1,8 @@
+#|w| ≥ 2.
+#The first and last symbol in w must be 1.
+#The string 00 must not occur in w.
+
+1(1|01)+
+
+#this regular expression will ensure that the language always starts with a 1, that can be succeeded by at least one 1 or (01), or a combination of {0,1}
+#that does not feature "00"

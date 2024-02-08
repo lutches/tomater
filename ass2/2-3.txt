@@ -1,0 +1,11 @@
+       a  b
+→ * s0 s3 s1
+  * s1 s4 s2
+  * s2 s5 s2
+    s3 s0 s4
+    s4 s5 s4
+    s5 s5 s5
+
+#we want the intersection of l(a) and l(b)
+#using this we check that the string doesn't contain "abb"
+#and has an even amount of a's

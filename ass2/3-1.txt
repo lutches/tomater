@@ -1,0 +1,10 @@
+     a       b    
+→ s0 {s4}   {s1} 
+  s1 {s2 s4} {s1} 
+  s2 {s3}   {s1} 
+* s3 {s3}   {s3}   
+  s4 {s5}   {s1} 
+  s5 {s5}   {s1}
+* s6 {s6}   {s6}
+#s1 is a begins check to see if word contains "baa"
+#s4 is a check to see if a every occurance of b is followed by two or more b

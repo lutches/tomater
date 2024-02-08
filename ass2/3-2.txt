@@ -1,0 +1,15 @@
+           a    b    
+→ s0      s4       s1
+  s1      (s2s4)  s1
+  s4      s5       s1
+  s5      s6       s1
+* s6      s6       s6
+  (s2s4) (s3s5)  s1
+* (s3s5) (s3s6)  (s1s3)
+* (s3s6) (s3s6)  (s3s6)
+* (s1s3) (s2s3s4) (s1s3)
+* (s2s3s4) (s3s4) (s1s3)
+* (s3s4) (s3s5) (s1s3)
+
+#since s3 from before was the accepting state
+#all states containing s3 now will be accepting
