@@ -1,10 +1,6 @@
      0       1    
-→ s0 {s0 s1} {s2} 
-  s1 {fail}  {s0,s2}
-* s2 {s2}    {s2}
-  fail {fail} {fail}
+→ s0 {s0} {s1} 
+* s1 {s1}    {s1}
 
-#(0+01*)*(ε+1)1(ε+0+1)* looking at the regular expression we can see that the language can contain a number of 0's or (01)'s 
-#then it can contain a 1 or not, then it must contain a 1, after this whatever input it will succeed
-
-
+# the expression can be compressed into (0+1+epsilon)*1(0+1+epsilon)*
+# meaning every word that contains atleast one "1" is allowed
