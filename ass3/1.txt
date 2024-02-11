@@ -1,6 +1,6 @@
      0       1    
 → s0 {s0 s1} {s2} 
-  s1 {fail}  {s0}
+  s1 {fail}  {s0,s2}
 * s2 {s2}    {s2}
   fail {fail} {fail}
 
