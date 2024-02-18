@@ -1,0 +1,29 @@
+#
+# 	        0	1
+# →  *   s₀	s₁	s₃
+#        s₁	s₄	s₂
+#    *   s₂	s₁	s₅
+#        s₃	s₀	s₄
+#        s₄	s₄	s₄
+#        s₅	s₂	s₄
+#
+#
+#s3 and s5 are equivalent states so they can be compressed
+#
+# 	        0	1
+# →  *   s₀	s₁	s₃
+#        s₁	s₄	s₂
+#    *   s₂	s₁	s₃
+#        s₃	s₀	s₄
+#        s₄	s₄	s₄
+#    
+#s0 and s2 are equivalent so they can be merged
+
+       0  1
+→ * s₀ s₁ s₃
+    s₁ s₄ s₀
+    s₃ s₀ s₄
+    s₄ s₄ s₄
+
+#this is the minimized dfa
+#there are no unreachable states and 
