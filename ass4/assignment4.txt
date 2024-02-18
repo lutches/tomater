@@ -78,8 +78,8 @@ since we have previously established that L is not regular, a contradiction and 
 
 (3)
 
-Assume we have w=0^n1^n2^{2n}. We know that y̸=ε and |xy|≤n. Since|xy|≤n and we know that xy comes at the front of w,
-we know that xy consists of only of 0’s. The pumping lemma tells us that xz is in L, if L is regular.
+Assume we have w=0^n1^n2^{2n}. We know that y̸=ε and |xy|≤n. Since|xy|≤n and we know that xy appears before w,
+we know that xy consists only of 0’s. The pumping lemma tells us that xz is in L, if L is regular.
 This conclusion is the case when k = 0 in the pumping lemma. However since y ̸= ε, we know that |y| ≥ 1, 
 so xz has at most n−1 0’s. This means that #0(xz)+#1(xz) ̸= #2(xz) since one 0 is missing, and thus xz is not in L.
 We have proved that xz is not in L, so we have a proof by contradiction that L is not regular.
