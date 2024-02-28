@@ -1,0 +1,35 @@
+(1)
+Nonterminals: S
+Terminals: a b
+Start: S
+S → aSb | | Sb 
+
+(2)
+
+(a)
+        S
+    /       \
+    aSb     Sb
+    /       /
+    aSbb    aSbb
+
+There is ambiguity when doing the parse tree
+since the expression asb and sb can be done in
+any order to yield the same result
+
+(4)
+
+M = {a^ib^(i + j) | i, j ∈ ℕ}.
+G = ({S}, {a,b}, S -> aSb | Sb | ε , S )
+with the formula M we have two options, increase with i or j.
+These options can be found i P aswell as the base case.
+smallest case is i = 0 and j = 0, gives us ""
+What we have to prove: for every w that belongs to L(G,S). w belongs to M.
+We know that
+1: S -> ε belong to P therefore "" eblongs to L(G,S).
+2: S -> Sb belong to P therefore Sb belong to L(G,S).
+3: S -> aSb belong to P therefore aSb belong to L(G,S).
+4: because 2 AND 3 therefore aSbb blongs to L(G,aSb) AND aSbb belongs to L (G,Sb)
+5: because 4 AND (2 AND 3) -> aSbb belongs to L(G,S)
+
+Because 1 AND 5 we know that the grammar encompasses the entire language

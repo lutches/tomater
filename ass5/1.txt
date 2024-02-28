@@ -1,0 +1,7 @@
+#G = ({S}, {a,b}, P, S) for M
+#S -> aSb | Sb | 𝜀
+
+Nonterminals: S
+Terminals: a b
+Start: S
+S → aSb | | Sb 

@@ -1,0 +1,10 @@
+Nonterminals: S, B
+Terminals: a b
+Start: S
+S → aSb | B |
+B → Bb | 
+
+
+the CFG starts by adding i aSb through the S nonterminal and the transistions to B where we add j
+Bb through the b nonterminal, this way there is only one way to create the word and it is therefore 
+unambiguos
