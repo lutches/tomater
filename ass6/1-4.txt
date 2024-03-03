@@ -1,8 +1,9 @@
-G3 = ({E, F, N}, {+, −, 1}, P, E)
+G4 = ({E, F, O, N, R}, {+, −, 1}, P, E)
 
 P =
-E → E F | N
-F → O E
-N → 1  | R N
-R → 1
-O → - | +
+
+E → E F | 1 | R N
+F → O E | E F | 1 | R N
+O → + | −
+N → 1 | R N
+R → 1
